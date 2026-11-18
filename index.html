@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Xiujia Wu</title>
+  <meta name="description" content="Personal site of Xiujia Wu, Ph.D. student in Electrical Engineering at City University of Hong Kong." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" id="brand-name">Xiujia Wu</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" id="nav-toggle">
+      Menu
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#honors">Honors</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-name">
+      <p class="hero-kicker" id="hero-location"></p>
+      <h1 id="hero-name"></h1>
+      <p class="hero-lead" id="hero-tagline"></p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#research">See research</a>
+        <a class="button button-ghost" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="section-head">
+        <h2 id="about-heading">About</h2>
+        <p>Research, campus life, and volunteer leadership.</p>
+      </div>
+      <div class="about-copy" id="about-copy"></div>
+    </section>
+
+    <section class="section" id="research" aria-labelledby="research-heading">
+      <div class="section-head">
+        <h2 id="research-heading">Research</h2>
+        <p>Metamaterials, plasmonic sensing, and perovskite optoelectronics.</p>
+      </div>
+      <div class="timeline" id="research-list"></div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-heading">
+      <div class="section-head">
+        <h2 id="experience-heading">Leadership experience</h2>
+        <p>Volunteer management across recruitment, operations, and service delivery.</p>
+      </div>
+      <div class="timeline" id="leadership-list"></div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <div class="section-head">
+        <h2 id="education-heading">Education</h2>
+        <p>From materials physics to micro/nano electronics and electrical engineering.</p>
+      </div>
+      <div class="timeline" id="education-list"></div>
+    </section>
+
+    <section class="section" id="publications" aria-labelledby="publications-heading">
+      <div class="section-head">
+        <h2 id="publications-heading">Publications</h2>
+        <p>Selected writing from the CV.</p>
+      </div>
+      <ul class="pub-list" id="publications-list"></ul>
+    </section>
+
+    <section class="section" id="honors" aria-labelledby="honors-heading">
+      <div class="section-head">
+        <h2 id="honors-heading">Honors &amp; awards</h2>
+        <p>Scholarships and recognitions listed on the CV.</p>
+      </div>
+      <ul class="honor-list" id="honors-list"></ul>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="section-head">
+        <h2 id="skills-heading">Academic knowledge &amp; languages</h2>
+        <p>Core coursework and language proficiency from the CV.</p>
+      </div>
+      <div class="skill-grid" id="skills-grid"></div>
+      <div class="lang-row" id="lang-row"></div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="section-head">
+        <h2 id="contact-heading">Contact</h2>
+        <p>Reach out by email or phone.</p>
+      </div>
+      <div class="contact-panel" id="contact-panel"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p id="footer-copy"></p>
+  </footer>
+
+  <script src="./content.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
